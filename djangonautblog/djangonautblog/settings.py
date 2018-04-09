@@ -122,5 +122,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     # BASE_DIR grabs djangonautblog path
+    # look in assets folder for static files
     os.path.join(BASE_DIR, 'assets')
 ]
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
