@@ -6,6 +6,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     # r = raw string, ^ = has to be start of string, $ = end of string
     # ^$ looks out for just .com
+    # include articles to route any endpoints from /articles
     url(r'^admin/', admin.site.urls),
     url(r'^articles/', include('articles.urls')),
     url(r'^about/$', views.about),
